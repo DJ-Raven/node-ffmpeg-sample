@@ -19,11 +19,7 @@ exports.screenshots = async (req, res, next) => {
 
 exports.stream = async (req, res, next) => {
   // Create video path
-  const videoPath = path.join(
-    __dirname,
-    "../../resources",
-    "sample_video.mp4"
-  );
+  const videoPath = path.join(__dirname, "../../resources", "sample_video.mp4");
 
   // Create a read stream for the input video file
   const inputVideoStream = fs.createReadStream(videoPath);
